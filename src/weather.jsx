@@ -12,7 +12,8 @@ import mist from './mist.gif';
 import haze from './haze.gif';
 import foggy from './foggy.gif';
 
-const API_KEY = process.env.OPENAI_API_KEY;
+const openWeatherMapApiKey = process.env.REACT_APP_OPENWEATHERMAP_API_KEY;
+const openAiApiKey = process.env.REACT_APP_OPENAI_API_KEY;
 
 function WeatherApp() {
   const [location, setLocation] = useState('');
@@ -27,7 +28,7 @@ function WeatherApp() {
         async (position) => {
           const { latitude, longitude } = position.coords;
           try {
-            const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=b09e633ee8fed057b37b0a1602c25cb0`);
+            const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${openWeatherMapApiKey}`);
             if (!response.ok) {
               throw new Error('Error fetching weather data.');
             }
@@ -67,7 +68,7 @@ function WeatherApp() {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          "Authorization": `Bearer ${API_KEY}`
+          "Authorization": `Bearer ${openAiApiKey}`
         },
         body: JSON.stringify(APIBody)
       });
@@ -98,7 +99,7 @@ function WeatherApp() {
     event.preventDefault();
     setManualInput(true);
     try {
-      const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=b09e633ee8fed057b37b0a1602c25cb0`);
+      const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${openWeatherMapApiKey}`);
       if (!response.ok) {
         throw new Error('Error fetching weather data. Please check the location.');
       }
@@ -262,4 +263,3 @@ function WeatherApp() {
 }
 
 export default WeatherApp;
-
