@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/Monsterra/static/css/main.d8465ffd.css",
+    "main.js": "/Monsterra/static/js/main.d1b4710e.js",
+    "static/js/453.06f356d8.chunk.js": "/Monsterra/static/js/453.06f356d8.chunk.js",
+    "static/media/mist.gif": "/Monsterra/static/media/mist.753050873a16852039fc.gif",
+    "static/media/haze.gif": "/Monsterra/static/media/haze.9e83242991bc2711e6cf.gif",
+    "static/media/bg.gif": "/Monsterra/static/media/bg.49155e0cab442ffc0fc1.gif",
+    "static/media/snowy.gif": "/Monsterra/static/media/snowy.8022f00aa073ff657ce2.gif",
+    "static/media/clearcool.gif": "/Monsterra/static/media/clearcool.302a5eb0c57eebeb4b4a.gif",
+    "static/media/toocool.gif": "/Monsterra/static/media/toocool.8e6a32ef8ba3525a2261.gif",
+    "static/media/drizzle.gif": "/Monsterra/static/media/drizzle.2ad0a7285f34db9dfbd8.gif",
+    "static/media/thunderstorm.gif": "/Monsterra/static/media/thunderstorm.ea78da160171df94f766.gif",
+    "static/media/cloudy.gif": "/Monsterra/static/media/cloudy.00cfdeb1738c2c50347f.gif",
+    "static/media/clearhot.gif": "/Monsterra/static/media/clearhot.cec889aeda5e9820d5ff.gif",
+    "static/media/rainy.gif": "/Monsterra/static/media/rainy.94f06255ddc8415ceea1.gif",
+    "static/media/foggy.gif": "/Monsterra/static/media/foggy.fc73680ab15c39c9e178.gif",
+    "index.html": "/Monsterra/index.html",
+    "main.d8465ffd.css.map": "/Monsterra/static/css/main.d8465ffd.css.map",
+    "main.d1b4710e.js.map": "/Monsterra/static/js/main.d1b4710e.js.map",
+    "453.06f356d8.chunk.js.map": "/Monsterra/static/js/453.06f356d8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d8465ffd.css",
+    "static/js/main.d1b4710e.js"
+  ]
+}
