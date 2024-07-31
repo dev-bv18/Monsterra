@@ -13,7 +13,7 @@ import haze from './haze.gif';
 import foggy from './foggy.gif';
 
 const openWeatherMapApiKey = process.env.REACT_APP_OPENWEATHERMAP_API_KEY;;
-const openAiApiKey = process.env.REACT_APP_OPENAI_API_KEY;
+const openAiApiKey ="08d026c164494acb895aab4e290f6de4";
 
 function WeatherApp() {
   const [location, setLocation] = useState('');
