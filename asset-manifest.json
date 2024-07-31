@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Monsterra/static/css/main.d8465ffd.css",
-    "main.js": "/Monsterra/static/js/main.d577353f.js",
+    "main.js": "/Monsterra/static/js/main.7a9680d8.js",
     "static/js/453.06f356d8.chunk.js": "/Monsterra/static/js/453.06f356d8.chunk.js",
     "static/media/mist.gif": "/Monsterra/static/media/mist.753050873a16852039fc.gif",
     "static/media/haze.gif": "/Monsterra/static/media/haze.9e83242991bc2711e6cf.gif",
@@ -17,11 +17,11 @@
     "static/media/foggy.gif": "/Monsterra/static/media/foggy.fc73680ab15c39c9e178.gif",
     "index.html": "/Monsterra/index.html",
     "main.d8465ffd.css.map": "/Monsterra/static/css/main.d8465ffd.css.map",
-    "main.d577353f.js.map": "/Monsterra/static/js/main.d577353f.js.map",
+    "main.7a9680d8.js.map": "/Monsterra/static/js/main.7a9680d8.js.map",
     "453.06f356d8.chunk.js.map": "/Monsterra/static/js/453.06f356d8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d8465ffd.css",
-    "static/js/main.d577353f.js"
+    "static/js/main.7a9680d8.js"
   ]
 }
