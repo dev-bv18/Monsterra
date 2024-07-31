@@ -12,7 +12,7 @@ import mist from './mist.gif';
 import haze from './haze.gif';
 import foggy from './foggy.gif';
 
-const openWeatherMapApiKey = process.env.REACT_APP_OPENWEATHERMAP_API_KEY;
+const openWeatherMapApiKey = process.env.REACT_APP_OPENWEATHERMAP_API_KEY;;
 const openAiApiKey = process.env.REACT_APP_OPENAI_API_KEY;
 
 function WeatherApp() {
