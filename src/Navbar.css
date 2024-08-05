@@ -82,7 +82,7 @@
 
 .nav-item {
     cursor: pointer;
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 10px;
     text-align: center;
     align-items: center;
@@ -91,7 +91,7 @@
 }
 
 .nav-item:hover {
-    background-color: rgba(0, 0, 0, 0.764);
+    background-color: rgba(0, 0, 0, 0.562);
 }
 
 .search {
