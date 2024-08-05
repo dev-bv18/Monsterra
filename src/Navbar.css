@@ -127,6 +127,14 @@
 @media screen and (max-width: 500px) {
     .nav{
         width: 100%;
-       
     }
+    .nav-items{
+    font-size: 10px;
+    }
+   .search button{
+    font-size: 10px;
+   }
+   .search input{
+    font-size: 10px;
+   }
 }
