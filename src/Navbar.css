@@ -123,3 +123,10 @@
 .search button:hover {
     background-color: #ff000053;
 }
+
+@media screen and (max-width: 500px) {
+    .nav{
+        width: 100%;
+       
+    }
+}

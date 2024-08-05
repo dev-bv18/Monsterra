@@ -222,7 +222,7 @@ function WeatherApp() {
   }, [weatherData]);
 
   return (
-    <div style={{ textAlign: 'center', height: '1000px', fontFamily: 'Arial, sans-serif', ...getBackgroundStyle() }}>
+    <div className='fullbox' style={{ textAlign: 'center', height: '1000px', fontFamily: 'Arial, sans-serif', ...getBackgroundStyle() }}>
       <h1 className='title1'>Monsterra 🌿</h1>
       <form onSubmit={handleSubmit}>
         <input

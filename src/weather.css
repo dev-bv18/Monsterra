@@ -9,16 +9,17 @@
     height: 300px;
     margin: 20px;
 }
-.mainbox div{
- height: 305px;
- font-style: italic;
+
+.mainbox div {
+    height: 305px;
+    font-style: italic;
     background-color: rgba(0, 0, 0, 0.397);
-    
-    
 }
-.mainbox div .cond{
-    background:none;
+
+.mainbox div .cond {
+    background: none;
 }
+
 .sidebox {
     display: flex;
     flex-direction: column;
@@ -27,22 +28,26 @@
     box-sizing: border-box;
     padding: 20px;
 }
-.sidebox:hover{
+
+.sidebox:hover {
     box-shadow: 2px 2px 5px;
     cursor: pointer;
 }
-.title1{
+
+.title1 {
     font-family: "Playwrite AR", cursive;
     margin-bottom: 0px;
     margin-top: 0px;
 }
-.desc{
+
+.desc {
     font-family: "Playwrite AR", cursive;
     text-align: center;
     opacity: 70%;
     margin: 0px;
     padding-top: 0px;
 }
+
 .sidebox h2 {
     font-size: 30px;
     font-weight: 700;
@@ -60,7 +65,8 @@
     background: none;
     flex: 1;
 }
-.details{
+
+.details {
     width: 100%;
     color: white;
     opacity: 70%;
@@ -73,40 +79,29 @@
     align-items: center;
     width: 25vh;
 }
-.details ul{
+
+.details ul {
     list-style: none;
     display: flex;
     flex-direction: column;
     padding: 0px;
     gap: 13px;
     text-align: center;
-    
-   
+}
 
-    
-}
-button:hover{
-    background-color: rgba(255, 0, 0, 0.544);
-    transition: all 0.4s ease-in-out;
-}
-input:focus{
-    background-color: aliceblue;
-}
-.details li{
+.details li {
     padding: 2px;
 }
 
-.details li:nth-child(odd)
-{
+.details li:nth-child(odd) {
     color: rgb(188, 188, 255);
     padding: 20px;
-    
 }
-.details li:hover{
+
+.details li:hover {
     background-color: rgba(0, 0, 0, 0.824);
     text-shadow: 2px 2px 20px rgb(0, 0, 0);
     cursor: pointer;
-   
 }
 
 .sidebox .cond {
@@ -120,7 +115,6 @@ input:focus{
 .cond p {
     font-size: 30px;
     opacity: 60%;
-
 }
 
 .cond .temper {
@@ -138,10 +132,85 @@ input:focus{
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
+
 .plantinfo p:hover {
     font-size: 21px;
     opacity: 80%;
     text-shadow: 2px 2px 30px rgb(0, 0, 0);
     transition: all 0.2s ease-in-out;
     cursor: pointer;
+}
+.fullbox{
+   margin-left: 38px;
+}
+
+@media screen and (max-width: 500px) {
+   html{
+    width: 100%;
+   }
+   .fullbox{
+    
+   }
+    .title1{
+   font-size: 40px;
+    }
+    .mainbox {
+        flex-direction: column-reverse;
+        height: auto;
+        gap: 0px;
+    }
+    
+    .mainbox div {
+        height: auto;
+        margin-bottom: 20px;
+    }
+    
+    .sidebox {
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+    form{
+        flex-direction: column;
+        gap: 20px;
+        margin-left: 85px;
+        text-align: center;
+        align-items: center;
+        width: 60%;
+
+    }
+  
+    
+    .sidebox h2 {
+        font-size: 25px;
+        padding: 10px;
+    }
+    .cond{
+        margin-bottom: 0px;
+        
+    }
+    .cond p{
+        margin: 0px;
+        padding-bottom: 0px;
+        padding-top: 3px;
+    }
+    
+    .details {
+        width: 100%;
+        font-size: 12px;
+    }
+    .details ul{
+        flex-direction: row;
+    }
+    .details ul li{
+        text-align: center;
+        padding-top: 20px;
+    }
+    .plantinfo p {
+        font-size: 10px;
+        padding: 20px;
+    }
+    .cond .temper{
+        font-size: 50px;
+    }
 }
