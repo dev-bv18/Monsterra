@@ -14,9 +14,9 @@ const Navbar = () => {
                 <div id="logo" className={`${menuVisible ? 'rotate' : ''}`}>☔</div>
                 <div className={`menu ${menuVisible ? 'spread' : ''}`}>
                     <ul className='menu-items'>
-                        <li>News</li>
-                        <li>Maps</li>
-                        <li>Parks</li>
+                        <li>Your Profile</li>
+                        <li>Your Subscriptions</li>
+                        <li>Sign Out</li>
                     </ul>
                 </div>
             </div>
