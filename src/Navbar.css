@@ -1,0 +1,125 @@
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    color: white;
+    background-color: #ff00004f;
+    height: 60px;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 50px;
+    position: relative;
+}
+
+#logo {
+    height: 40px;
+    width: auto;
+    border-radius: 50%;
+    margin: 5px;
+    font-size: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#logo.rotate {
+    transform: rotate(180deg);
+}
+
+.menu {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    width: 200px;
+    margin: auto;
+    text-align: center;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.4s ease-in-out;
+    background: linear-gradient(rgba(255, 0, 0, 0.353), rgba(0, 0, 0, 0.288));
+    z-index: 1;
+}
+
+.menu.spread {
+    max-height: 300px;
+}
+
+.menu-items {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    cursor: pointer;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-items li {
+    font-weight: 700;
+    padding: 10px 30px;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.menu-items li:hover {
+    background-color: #000000;
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+.nav-items {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    gap: 20px;
+    font-weight: 500;
+}
+
+.nav-item {
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.nav-item:hover {
+    background-color: rgba(0, 0, 0, 0.764);
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search input {
+    padding: 5px;
+    border: 0px;
+    border-radius: 20px;
+    font-size: 15px;
+    color: black;
+}
+
+.search button {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #ff0000;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.search button:hover {
+    background-color: #ff000053;
+}
