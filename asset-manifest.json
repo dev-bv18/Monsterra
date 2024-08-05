@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Monsterra/static/css/main.5312e1f2.css",
-    "main.js": "/Monsterra/static/js/main.570e244b.js",
+    "main.css": "/Monsterra/static/css/main.6546c1ac.css",
+    "main.js": "/Monsterra/static/js/main.01c30b2b.js",
     "static/js/453.06f356d8.chunk.js": "/Monsterra/static/js/453.06f356d8.chunk.js",
     "static/media/mist.gif": "/Monsterra/static/media/mist.753050873a16852039fc.gif",
     "static/media/haze.gif": "/Monsterra/static/media/haze.9e83242991bc2711e6cf.gif",
@@ -16,12 +16,12 @@
     "static/media/rainy.gif": "/Monsterra/static/media/rainy.94f06255ddc8415ceea1.gif",
     "static/media/foggy.gif": "/Monsterra/static/media/foggy.fc73680ab15c39c9e178.gif",
     "index.html": "/Monsterra/index.html",
-    "main.5312e1f2.css.map": "/Monsterra/static/css/main.5312e1f2.css.map",
-    "main.570e244b.js.map": "/Monsterra/static/js/main.570e244b.js.map",
+    "main.6546c1ac.css.map": "/Monsterra/static/css/main.6546c1ac.css.map",
+    "main.01c30b2b.js.map": "/Monsterra/static/js/main.01c30b2b.js.map",
     "453.06f356d8.chunk.js.map": "/Monsterra/static/js/453.06f356d8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5312e1f2.css",
-    "static/js/main.570e244b.js"
+    "static/css/main.6546c1ac.css",
+    "static/js/main.01c30b2b.js"
   ]
 }
