@@ -129,7 +129,7 @@ input:focus{
 }
 
 .plantinfo p {
-    font-size: 30px;
+    font-size: 20px;
     width: 100%;
     padding: 33px;
     text-align: start;
@@ -139,7 +139,7 @@ input:focus{
     box-sizing: border-box;
 }
 .plantinfo p:hover {
-    font-size: 31px;
+    font-size: 21px;
     opacity: 80%;
     text-shadow: 2px 2px 30px rgb(0, 0, 0);
     transition: all 0.2s ease-in-out;
