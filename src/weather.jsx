@@ -162,10 +162,10 @@ function WeatherApp() {
   }, [weatherData]);
 
   return (
-    <div className="min-h-screen text-center p-8 flex flex-col items-center justify-center bg-gradient-to-r from-gray-800 via-gray-900 to-black" style={{ fontFamily: 'Poppins, sans-serif', ...getBackgroundStyle(), backgroundSize: 'cover', backgroundPosition: 'center' }}>
-      <h1 className="text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-indigo-400 to-blue-500 mb-8 animate-pulse">Monsterra 🌿</h1>
+    <div className="min-h-screen text-center p-8 flex flex-col items-center justify-center bg-cover bg-center" style={{ fontFamily: 'Poppins, sans-serif', ...getBackgroundStyle() }}>
+      <h1 className="text-4xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-indigo-400 to-blue-500 mb-8 animate-pulse">Monsterra 🌿</h1>
       
-      <form onSubmit={handleSubmit} className="mb-8">
+      <form onSubmit={handleSubmit} className="mb-8 flex flex-col items-center md:flex-row md:items-start">
         <input
           type="text"
           placeholder="Enter location"
@@ -185,29 +185,30 @@ function WeatherApp() {
       {weatherData && (
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-4xl text-white">
           <div className="p-6 bg-gray-800 bg-opacity-40 rounded-xl shadow-lg backdrop-blur-lg border border-gray-600 border-opacity-40 transition-all duration-500 ease-in-out transform hover:scale-105">
-            <ul>
-              <li className="mb-4 text-2xl">{weatherData.main.humidity}% <br />💧 Humidity</li>
-              <li className="mb-4 text-2xl">{weatherData.wind.speed} m/s <br />🎏 Wind Speed</li>
-              <li className="text-2xl">{weatherData.main.pressure} hPa <br />🔩 Pressure</li>
+            <ul className="space-y-4">
+              <li className="text-xl md:text-2xl">{weatherData.main.humidity}% <br />💧 Humidity</li>
+              <li className="text-xl md:text-2xl">{weatherData.wind.speed} m/s <br />🎏 Wind Speed</li>
+              <li className="text-xl md:text-2xl">{weatherData.main.pressure} hPa <br />🔩 Pressure</li>
             </ul>
           </div>
           <div className="plantinfo p-8 bg-gray-800 bg-opacity-50 rounded-2xl shadow-lg backdrop-blur-lg border border-gray-700 border-opacity-60 transition-transform transform hover:scale-105">
             <div className="flex flex-col items-center">
-              <h2 className="text-4xl font-bold mb-4 text-gray-300">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-300">
                 {weatherData.name}🌡️
-                <span className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-200 via-indigo-400 to-blue-300 ">  {(weatherData.main.temp - 273.15).toFixed(2)}°C</span>
+                <span className="block text-xl md:text-2xl mt-2">
+                  {(weatherData.main.temp - 273.15).toFixed(2)}°C
+                </span>
               </h2>
-              <p className="text-xl text-gray-300 mb-6">Condition: {weatherData.weather[0].main}</p>
+              <p className="text-lg md:text-xl font-medium mb-4 text-gray-400">
+                {weatherData.weather[0].main}
+              </p>
               <img
-                src={`http://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`}
-                alt="weather-icon"
-                className="w-32 h-32"
+                src={weatherData.weather[0].icon.includes('d') ? `http://openweathermap.org/img/wn/${weatherData.weather[0].icon}.png` : `http://openweathermap.org/img/wn/${weatherData.weather[0].icon}.png`}
+                alt={weatherData.weather[0].description}
+                className="w-24 h-24"
               />
+              <p className="text-md md:text-lg text-gray-300 mt-4">{sentiment}</p>
             </div>
-          </div>
-          <div className="p-6 bg-gray-800 bg-opacity-40 rounded-xl shadow-lg backdrop-blur-lg border border-gray-600 border-opacity-40 transition-all duration-500 ease-in-out transform hover:scale-105">
-            <h2 className="text-2xl mb-4">Plant Care Suggestions:</h2>
-            <p className='text-2sm'>{sentiment}</p>
           </div>
         </div>
       )}
