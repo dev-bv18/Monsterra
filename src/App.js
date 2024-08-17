@@ -1,13 +1,15 @@
 
 import './App.css';
+import Footer from './Footer';
 import Navbar from './Navbar';
 import WeatherApp from './weather';
 
 function App() {
   return (
     <div className="App">
-      <Navbar/>
+    <Navbar/>
     <WeatherApp/>
+    <Footer/>
     
     </div>
   );

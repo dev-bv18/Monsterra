@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 body{
 background: url(./bg.gif);
 background-color: #000000bd;
