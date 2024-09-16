@@ -207,9 +207,10 @@ function WeatherApp() {
                 alt={weatherData.weather[0].description}
                 className="w-24 h-24"
               />
-              <p className="text-md md:text-lg text-gray-300 mt-4">{sentiment}</p>
             </div>
+          
           </div>
+          <p className="p-8 bg-gray-800 bg-opacity-50 rounded-2xl shadow-lg backdrop-blur-lg border border-gray-700 border-opacity-60 transition-transform transform hover:scale-105 text-md md:text-lg ">{sentiment}</p>
         </div>
       )}
     </div>
