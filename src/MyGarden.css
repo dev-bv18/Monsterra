@@ -1,0 +1,63 @@
+.my-garden-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.plant-list, .my-garden {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    width: 80%;
+}
+
+.plant-card, .garden-plant-card {
+    width: 250px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.plant-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.plant-details h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.plant-details p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.guidance {
+    margin-top: 15px;
+    font-size: 0.9em;
+}
+
+.guidance h4 {
+    margin-bottom: 5px;
+    font-size: 1.1em;
+}
